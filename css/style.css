@@ -135,7 +135,7 @@ blockquote img{
     
 }
 .project-card img{
-    width: 250px
+    width: 250px;
 }
 .project-card figcaption{
     color: var(--colorThree);
@@ -272,9 +272,6 @@ footer h6{
     }
     .card-skill{
         width: 45%;
-    }
-    .project-card{
-        width: 300px;
     }
     .project-card img{
         width: 280px;
