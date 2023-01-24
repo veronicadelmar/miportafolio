@@ -132,7 +132,7 @@ blockquote img{
     border: 1px #bdbdbd solid;
     padding: 20px 10px;
     margin-bottom: 20px;
-    height: 220px;
+    
 }
 .project-card img{
     width: 250px
@@ -270,11 +270,15 @@ footer h6{
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .card-skill, .project-card{
+    .card-skill{
         width: 45%;
     }
+    .project-card{
+        width: 300px;
+    }
     .project-card img{
-        width: 280px
+        width: 280px;
+        height: 120px;
     }
     /*plus para agrander los parrafos en la seccion mis prosyectos y mis conocimientos*/
     /* MIS CONOCIMIENTOS */
