@@ -132,10 +132,10 @@ blockquote img{
     border: 1px #bdbdbd solid;
     padding: 20px 10px;
     margin-bottom: 20px;
-    
+    width: 250px;
 }
 .project-card img{
-    width: 250px;
+    width: 200px;
 }
 .project-card figcaption{
     color: var(--colorThree);
@@ -270,13 +270,14 @@ footer h6{
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .card-skill{
+    .card-skill, .project-card{
         width: 45%;
     }
     .project-card img{
         width: 280px;
         height: 120px;
     }
+
     /*plus para agrander los parrafos en la seccion mis prosyectos y mis conocimientos*/
     /* MIS CONOCIMIENTOS */
     
@@ -402,12 +403,11 @@ footer h6{
     }
     /*plus, uno los mismos estilos para acomodar las cajitas de mis conocimientos y mis proyectos*/
     /* MIS CONOCIMIENTOS *___/  /____* MIS PROYECTOS */ 
-    .card-skill, .project-card{
+    .card-skill{
         width: 30%;
     }
     .project-card{
-        padding: 20px 10px;
-        height: 260px;
+        width: 33%;
     }
     .project-card img{
         width: 330px
@@ -430,7 +430,6 @@ footer h6{
     #contact{
         background-color: var(--backgrounColor);
         padding: 180px 120px;
-
     }
     .contact__container{
         border-radius: 10px;
@@ -441,7 +440,6 @@ footer h6{
         padding: 120px 20px 60px;
         width: 100%;
     }
-    
     /*contactame BOX */
     .contact-box{
         display: flex;
@@ -455,9 +453,6 @@ footer h6{
     .box__date article{
         width: 48%;
     }
-   
-    
-  
     /*FOOTER*/
     .nav__footer ul{
         display: flex;
@@ -467,10 +462,6 @@ footer h6{
     #redes-sociales__container{
         padding: 0 560px;
       }
-    
-    
-
-
 }
 
 
