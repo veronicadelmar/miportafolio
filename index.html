@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo + icon / solapa de la web -->
+    <title>Verónica Guiñan ~ Verolicious</title>
+    <link rel="shortcut icon" href="./img/fotoDePerfil.jpg" type="image/x-icon">
+    <!-- devicon / link para llamar los DeveloperIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!--link de font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- fuente de google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap" rel="stylesheet">
+    <!-- link's -->
+    <!-- voy a colocar link para usar , css, js, boostrap etc-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- _________HEADER_________ -->
+    <header>
+        <!-- navBar -->
+        <nav>
+            <ul>
+                <li>
+                    <a class="itemNav" href="#about">hola</a>
+                </li>
+                <li>
+                    <a class="itemNav" href="#skills">conocimientos</a>
+                </li>
+                <li>
+                    <a class="itemNav" href="#projects">proyectos</a>
+                </li>
+                <!-- botton para ir a la seccion contacto -->
+                <li>
+                    <a class="buttonNav" href="#contact">contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- _________MAIN________ -->
+    <main>
+        <!-- SOMBRE MI -->
+        <section id="about">
+            <!-- BOX 1 DE ABOUT -->
+            <article>
+                <p id="hello">¡Hola! Soy</p>
+                <h1>Verónica del Mar Guiñan López</h1>
+                <p id="quien__soy">Ingeniera, Desarrolladora Front End y fan de Harry Potter</p>
+                <!-- boton para ir a la seccion proyectos -->
+                <button class="firstButton">
+                    <a href="#projects">LO QUE HAGO</a>
+                </button>
+            </article>
+            <!-- BOX 2 DE ABOUT -->
+            <figure id="girl">
+                <img src="./img/devGirl_like.png" alt="chica desarrollado front end">
+            </figure>
+        </section>
+        <!-- MIS CONOCIMIENTOS -->
+        <section id="skills">
+            <h2>Mis conocimientos</h2>
+            <p>Las tecnologías en las que mejor me desempeño son:</p>
+            <!-- skills container -->
+            <article class="skills__container">
+                <!-- skills card html -->
+                <figure class="card-skill">  
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="logo de html" />
+                    <figcaption>HTML 5</figcaption>
+                </figure>
+                <!-- skills card css -->
+                <figure class="card-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="logo de css" />
+                    <figcaption>CCS 3</figcaption>
+                </figure>
+                <!-- skills card sass -->
+                <figure class="card-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="logo de sass" />
+                    <figcaption>SASS</figcaption>
+                </figure>
+                <!-- skills card javascript -->
+                <figure class="card-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="logo de javascript" />
+                    <figcaption>JAVASCRIPT</figcaption>
+                </figure>
+                <!-- skills card react -->
+                <figure class="card-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="logo de react" />
+                    <figcaption>REACT</figcaption>
+                </figure>
+                <!-- skills card git -->
+                <figure class="card-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="logo de git" />
+                    <figcaption>GIT</figcaption>
+                </figure>
+                <!-- skills card webflow -->
+                <figure class="card-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" alt="logo de webflow" />
+                    <figcaption>WEBFLOW</figcaption>
+                 </figure>
+                 <!-- skills card boostrap -->
+                 <figure class="card-skill">   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="logo de bootstrap"/>
+                    <figcaption>BOOTSTRAP</figcaption>
+                 </figure>
+                 <!-- skills card MYSQl -->
+                 <figure class="card-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="logo de mysql" />
+                    <figcaption>MYSQL</figcaption>
+                 </figure>
+                 <!-- skills card figma -->
+                 <figure class="card-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="logo de figma"/>
+                    <figcaption>FIGMA</figcaption>
+                 </figure>
+            </article>
+        </section>
+        <!-- una cita / no tiene link en el navbar -->
+        <blockquote cite="#">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Es una locura odiar a una rosa sólo porque te pinchó y es una locura renunciar a tus sueños porque uno no se cumplió.</p>
+            <h3>El principito</h3>
+            <figure>
+                <img src="./img/principito.png" alt="el principito">
+            </figure>
+        </blockquote>
+        <!-- MIS PROYECTOS -->
+        <section id="projects">
+            <h2>Mis proyectos</h2>
+            <p>Algunos de mis trabajos realizados son:</p>
+            <!-- skills container -->
+            <section class="projects__container">
+                <!-- project card - portafolio --> 
+                <article class="project-card">
+                    <a href="#" target="_blank">
+                       <figure>
+                           <img src="./img/portafolio.png" alt="imagen del proyecto">
+                           <figcaption>Portafolio</figcaption>
+                       </figure>
+                    </a>
+               </article>
+               <!-- project card - mercado liebre --> 
+               <article class="project-card">
+                    <a href="https://veronicadelmar.github.io/mercado-liebre/" target="_blank">
+                       <figure>
+                           <img src="./img/mercadoLiebre.png" alt="imagen del proyecto">
+                           <figcaption>Mercado Liebre</figcaption>
+                        </figure>
+                   </a>
+               </article>
+               <!-- project card - webflow @dingusandzazzy.com --> 
+               <article class="project-card">
+                   <a href="https://preview.webflow.com/preview/elliotsonstractors?utm_medium=preview_link&utm_source=dashboard&utm_content=elliotsonstractors&preview=b2552e7df1d2828b874fe17ef5b0908d&workflow=preview" target="_blank">
+                        <figure>
+                           <img src="./img/webflow@dingusandzazzy.com__cliente.png" alt="imagen del proyecto">
+                           <figcaption>Prueba Webflow</figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </section>
+        </section>
+        <!-- CONTACTAME -->
+        <section id="contact">
+            <section class="contact__container">
+                    <!-- contactame BOX -->
+                    <article class="box">
+                        <h3>Contactame</h3>
+                        <p>Si deseas comunicarte conmigo por algun asunto profesional o colaborativo no dudes en contactarme.</p>
+                        <article class="contact-box">
+                            <a href="https://github.com/veronicadelmar" target="_blank" rel="noopener noreferrer">
+                                <figure>
+                                    <i class="fa-brands fa-github-alt"></i>
+                                    <figcaption>Veronicadelmar</figcaption>
+                                </figure>
+                            </a>
+                            <a href="https://www.linkedin.com/in/veronicagui%C3%B1an/" target="_blank" rel="noopener noreferrer">
+                                <figure>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                    <figcaption>Verónica del Mar Guiñan López</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="contact-box">
+                            <a href="mailto:unachamaqueprograma@gmail.com" target="_blank">
+                                <figure>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <figcaption>unachamaqueprograma@gmail.com</figcaption>
+                                </figure>
+                            </a>
+                            <a href="https://www.instagram.com/unachamaqueprograma/" target="_blank" rel="noopener noreferrer">
+                                <figure>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <figcaption>@unachamaqueprograma</figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </article>
+                    <!-- escribeme BOX -->
+                    <article class="box">
+                        <h3>Escríbeme</h3>
+                        <form action="./index.html" method="get">
+                            <fieldset>
+                                <section class="box__date">
+                                    <article>
+                                        <label for="text">Nombre *</label>
+                                        <input type="text" name="name" id="name" class="name" placeholder="Ada" required>
+                                    </article>
+                                    <article>
+                                        <label for="text">Apellido *</label>
+                                        <input type="text" name="surname" id="surname" placeholder="Lovelace" required>
+                                    </article>
+                                </section>
+                                <section>
+                                    <label for="text">Email *</label>
+                                    <input type="email" name="email" id="email" placeholder="ada.lovelace@gmail.com" required>
+                                    <label for="text">Mensaje *</label>
+                                    <textarea name="mensaje" id="mensaje" placeholder="Escriba un mensaje aquí" cols="25" rows="6" required></textarea>
+                                    <a href="./index.html">
+                                         <button type="submit">Enviar</button>
+                                    </a>
+                                </section>
+                            </fieldset>
+                        </form>
+                    </article>
+            </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <!-- navFooter -->
+       <nav class="nav__footer">
+            <ul>
+                <li><a href="#about">HOLA</a></li>
+                <li><a href="#skills">CONOCIMIENTOS</a></li>
+                <li><a href="#projects">PROYECTOS</a></li>
+                <li><a href="#contacts">CONTACTOS</a></li>
+            </ul>
+        </nav>
+        <!-- redes sociales -->
+        <section id="redes-sociales__container">
+            <a href="https://github.com/veronicadelmar" target="_blank">
+                <figure>
+                    <i class="fa-brands fa-github-alt circle"></i>
+                </figure>
+            </a>
+            <a href="https://www.linkedin.com/in/veronicagui%C3%B1an/" target="_blank">
+                <figure>
+                    <i class="fa-brands fa-linkedin-in circle"></i>
+                </figure>
+            </a>
+            <a href="mailto:unachamaqueprograma@gmail.com" target="_blank">
+                <figure>
+                    <i class="fa-solid fa-envelope circle"></i>
+                </figure>
+            </a>
+            <a  href="https://www.instagram.com/unachamaqueprograma/" target="_blank">
+                <figure>
+                    <i class="fa-brands fa-instagram circle"></i>
+                </figure>
+            </a>
+        </section>
+        <h6>Hecho con <i class="fa-solid fa-heart"></i> por Verolicious</h6>
+    </footer>
+</body>
+</html>
