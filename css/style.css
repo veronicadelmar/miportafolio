@@ -130,17 +130,20 @@ blockquote img{
 .project-card{
     border-radius: 10px;
     border: 1px #bdbdbd solid;
-    padding: 20px 10px;
     margin-bottom: 20px;
-    width: 250px;
 }
 .project-card img{
-    width: 200px;
+    width: 250px;
+    height: 220px;
 }
-.project-card figcaption{
+figure .ilust{
+    margin: 25px 0;
+    height: 180px;
+}
+.project-card img + figcaption{
     color: var(--colorThree);
-    margin: 30px 50px;
-    padding-bottom: 3px;
+    padding-bottom: 4px;
+    margin: 0 50px 20px;
     border-bottom: 2px #2e2e31 solid;
 }
 /* CONTACTAME */
@@ -273,14 +276,9 @@ footer h6{
     .card-skill, .project-card{
         width: 45%;
     }
-    .project-card img{
-        width: 280px;
-        height: 120px;
+    figure .ilust{
+        height: 170px;
     }
-
-    /*plus para agrander los parrafos en la seccion mis prosyectos y mis conocimientos*/
-    /* MIS CONOCIMIENTOS */
-    
     /* CITA DEL PRINCIPITO */
     blockquote img{
         width: 50%;
@@ -400,18 +398,17 @@ footer h6{
     }
     .card-skill{
         padding: 40px 50px;
-    }
-    /*plus, uno los mismos estilos para acomodar las cajitas de mis conocimientos y mis proyectos*/
-    /* MIS CONOCIMIENTOS *___/  /____* MIS PROYECTOS */ 
-    .card-skill{
         width: 30%;
     }
+    /*MIS PROYECTOS*/
+    .projects__container{
+        padding: 0 100px;
+    }
     .project-card{
-        width: 33%;
+        width: 30%;
     }
-    .project-card img{
-        width: 330px
-    }
+    
+   
     /*PLUS - SIRVE PARA EL TITULO Y TEXTO DE LA SECCION MIS CONOCIMIENTOS Y LA SECCION MIS PROYECTOS*/
     #skills h2, #projects h2{
          font-size: 3rem;
