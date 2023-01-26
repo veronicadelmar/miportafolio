@@ -23,7 +23,9 @@
 }
 /* hover para todos los botones */
 .btn__hover:hover{
+    transition-property: all;
     background-color: var(--pink__hover);
+    transition-duration: 1s;
 }
 /* mismo font size para los h2*/
 .fs__h2{
@@ -36,12 +38,25 @@
     padding: 50px 0;
 }
 /* PLUS estos estilos me sirven para el hover de las cajitas de mis conocimientos y las cajitas de mis proyectos */
-.skills__container--card:hover figcaption, .skills__container--card:hover, .projects__container--card:hover, .projects__container--card:hover figcaption{
+.skills__container--card:hover figcaption, .projects__container--card:hover, .projects__container--card:hover figcaption{
     color: var(--pink);
+    opacity: 1;
     border-color: var(--pink);
 }
+/* BODY */
+/* whatsapp */
+.whatsapp{
+    color: rgb(103,193,94);
+    font-size: 2rem;
+    position:fixed;
+    right: 5px;
+    top: 15px;
+    z-index: 0;
+}
 /* _________HEADER_________ */
-/*PLUS -  esconder NAVBAR y nav__footer */
+header{
+    z-index: 1;
+}
 /* navbar */
 .navbar, .nav__footer{
     display: none;
@@ -84,7 +99,7 @@ h1, .navbar__item:hover{
     font-size: 1rem;
     border: none;
     margin: 40px 0 20px;
-}
+}  
 #girl img{
     width: 320px;
 }
@@ -104,6 +119,13 @@ h1, .navbar__item:hover{
     border-radius: 10px;
     border: 1px #bdbdbd solid;
     margin-bottom: 15px;
+    opacity: 0.8;
+}
+.skills__container--card:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    border-color: var(--pink);
+    opacity: 1;
 }
 .skills__container--card img + figcaption{
     font-weight: bold;
@@ -147,6 +169,9 @@ blockquote img{
 .projects__container--card img{
     width: 250px;
     height: 220px;
+}
+.projects__container--card:hover{
+    box-shadow: -5px 8px 5px 0px rgba(255,91,157,1);
 }
 .card__icon{
     margin: 25px 0;
@@ -198,6 +223,8 @@ blockquote img{
     background-color: var(--pink);
     border-radius: 100%;
     color: var(--color__white);
+    transition-property: all;
+    transition-duration: 0.3s;
 }
 /* escribeme BOX */
 form{
@@ -268,6 +295,11 @@ h6 i{
 /* media queries 760px para tablet */
 @media (min-width: 768px){
     /*_________MAIN________*/
+     /* whatsapp */
+     .whatsapp{
+        font-size: 3rem;
+        top: 30px;
+        }
     /* BOX 1 | ABOUT MY */
     #about__hello{
         font-weight: 900;
@@ -355,6 +387,12 @@ h6 i{
     body{
         padding-top: 50px;   
     }
+       /* whatsapp */
+       .whatsapp{
+        font-size: 4rem;
+        top: 120px;
+        right: 22px;
+        }
     /* HEADER */
     header{
         background-color: var(--color__white);
@@ -486,7 +524,6 @@ h6 i{
     .contact__container--box--card figure{
         margin-left: 10px;
     }
-    
     /* escribeme BOX */
     .form__date article{
         width: 48%;
