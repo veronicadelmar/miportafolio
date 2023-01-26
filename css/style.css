@@ -6,31 +6,59 @@
 }
 :root{
     --pink: #FF0066;
-    --pinkHover: #ff5b9d;
-    --colorText: #2e2e31;
-    --colorTextTwo: #757575;
-    --colorWhite: #ffffff;
-    --backgrounColor: #f6f7fb;
-    --colorBorder: #bdbdbd;
-    --colorThree: #686868;
+    --pink__hover: #ff5b9d;
+    --color__dark: #2e2e31;
+    --color__text: #757575;
+    --color__white: #ffffff;
+    --backgroun__color: #f6f7fb;
+    --color__border: #bdbdbd;
+    --color__text__two: #686868;
+}
+/* _____ CLASES PARA UNIFICAR ESTILOS _____*/
+.white{
+    color: var(--color__white);
+}
+.upper{
+    text-transform: uppercase;
+}
+/* hover para todos los botones */
+.btn__hover:hover{
+    background-color: var(--pink__hover);
+}
+/* mismo font size para los h2*/
+.fs__h2{
+    font-size: 2.6rem;
+}
+/* estos estilos son para las p que estan debajo de los h2 (en mis conocimientos y mis proyectos), comparten el mismo estilo*/
+.h2--p{
+    font-size: 1.2rem;
+    color: var(--color__text);
+    padding: 50px 0;
+}
+/* PLUS estos estilos me sirven para el hover de las cajitas de mis conocimientos y las cajitas de mis proyectos */
+.skills__container--card:hover figcaption, .skills__container--card:hover, .projects__container--card:hover, .projects__container--card:hover figcaption{
+    color: var(--pink);
+    border-color: var(--pink);
 }
 /* _________HEADER_________ */
-/* navBar */
-nav{
+/*PLUS -  esconder NAVBAR y nav__footer */
+/* navbar */
+.navbar, .nav__footer{
     display: none;
 }
-/* %%TODOS LOS ENLACES%% */
+/* ##Todos los ancla## */
 a{
     text-decoration: none;
 }
 /* _________MAIN________ */
-/* SOBRE MI __ BOX 1 */
+/* ABOUT MY */
 #about{
-    padding: 100px 0 50px;
+    padding-top: 100px;
     text-align: center;
 }
-#hello{
-    color: var(--colorText);
+/* BOX 1 | ABOUT MY */
+#about__hello{
+    color: var(--color__dark);
     font-weight: 900;
     font-size: 1.8rem;
 }
@@ -39,77 +67,61 @@ h1{
     font-size: 2.6rem;
     margin: 10px 0 20px;
 }
-/* plus para darle el mismo color a los itemNav cuando hacemos hover*/
-h1, .itemNav:hover{
+/* PLUS para darle el mismo color aL H1 y a los navbar__item cuando hacemos hover*/
+h1, .navbar__item:hover{
     color: var(--pink);
 }
-#quien__soy{
-    font-size: 1.2rem;
-    color: var(--colorTextTwo);
-    padding: 0 30px;
+#about__quiensoy{
+    font-size: 1rem;
+    color: var(--color__text);
+    padding: 0 40px;
 }
-/* boton =LO QUE HAGO= */
-.firstButton{
+/* ABOUT MY boton para ir a la seccion proyectos */
+.about__btn{
     background-color: var(--pink);
-    padding: 15px 50px;
+    padding: 13px 50px;
     border-radius: 30px;
     font-size: 1rem;
     border: none;
     margin: 40px 0 20px;
 }
-.firstButton a{
-    color: var(--colorWhite);
-}
-/* plus para usar el mismo estilo para el hover de los botones contacto y lo que hago (que me lleva a proyectos) */
-.firstButton:hover, .buttonNav:hover{
-    background-color: var(--pinkHover);
+#girl img{
+    width: 320px;
 }
 /* MIS CONOCIMIENTOS */
 #skills{
-    background-color: var(--backgrounColor);
-    padding: 180px 40px 120px;
+    background-color: var(--backgroun__color);
+    padding: 80px 40px;
     text-align: center;
 }
-/*PLUS - SIRVE PARA EL TITULO Y TEXTO DE LA SECCION MIS CONOCIMIENTOS Y LA SECCION MIS PROYECTOS*/
-#skills h2, #projects h2{
-    font-size: 2.6rem;
-}
-h2 + p, #projects p{
-    font-size: 1.2rem;
-    color: var(--colorTextTwo);
-    padding: 50px 0;
+.skills__container{
+    padding: 0 20px;
 }
 /* skills CARD */
-.card-skill{
-    padding: 60px 80px;
-    background-color: var(--colorWhite);
+.skills__container--card{
+    padding: 40px 60px;
+    background-color: var(--color__white);
     border-radius: 10px;
     border: 1px #bdbdbd solid;
     margin-bottom: 15px;
 }
-.card-skill img + figcaption{
+.skills__container--card img + figcaption{
     font-weight: bold;
     font-size: 1.2rem;
-    color: var(--colorText);
-}
-/* PLUS estos estilos me sirven para el hover de las cajitas de mis conocimientos y las cajitas de mis proyectos */
-.card-skill:hover figcaption, .card-skill:hover, .project-card:hover, .project-card:hover figcaption{
-    color: var(--pink);
-    border-color: var(--pink);
+    color: var(--color__dark);
 }
 /* CITA DEL PRINCIPITO */
 blockquote{
     background-color: var(--pink);
     text-align: center;
-    color: var(--colorWhite);
-    padding: 120px 10px;
+    padding: 100px 20px;
 }
 .fa-quote-right{
     font-size: 8rem;
 }
 blockquote p{
-    margin: 15px 0;
-    font-size: 1.3rem;
+    margin: 15px 0 40px;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 blockquote h3{
@@ -123,73 +135,78 @@ blockquote img{
 }
 /* MIS PROYECTOS */
 #projects{
-    padding: 180px 40px 100px;
+    padding: 80px 40px;
     text-align: center;
 }
 /* project CARD */
-.project-card{
+.projects__container--card{
     border-radius: 10px;
     border: 1px #bdbdbd solid;
     margin-bottom: 20px;
 }
-.project-card img{
+.projects__container--card img{
     width: 250px;
     height: 220px;
 }
-figure .ilust{
+.card__icon{
     margin: 25px 0;
     height: 180px;
 }
-.project-card img + figcaption{
-    color: var(--colorThree);
+.projects__container--card img + figcaption{
+    color: var(--color__text__two);
     padding-bottom: 4px;
     margin: 0 50px 20px;
     border-bottom: 2px #2e2e31 solid;
 }
-/* CONTACTAME */
+/* CONTACTO */
 #contact h3{
     font-size: 2.6rem;
-    margin: 0 0 0 20px
+    margin-left: 20px;
+}
+.contact__container--box{
+    padding-bottom: 20px;
 }
 #contact h3 + p{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
-    color: var(--colorThree);
+    color: var(--color__text__two);
     margin: 30px 20px;
 }
-.contact-box figure{
+/* contactame BOX */
+.contact__container--box--card figure{
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
 }
-.contact-box i + figcaption{
-    color: var(--colorThree);
-    font-size: 1.2rem;
+.contact__container--box--card i + figcaption{
+    color: var(--color__text__two);
+    font-size: 1rem;
     font-weight: 300;
     margin: 20px 0;
 }
-.contact-box i{
+.contact__container--box--card i{
     color: var(--pink);
     font-size: 1.5rem;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px;
 }
-.contact-box a:hover figcaption{
+.contact__container--box--card a:hover figcaption{
     color: var(--pink);
 }
-.contact-box a:hover figure i{
+.contact__container--box--card a:hover figure i{
     background-color: var(--pink);
     border-radius: 100%;
-    color: var(--colorWhite);
+    color: var(--color__white);
 }
-/* ESCRIBEME - FORMULARIO */
+/* escribeme BOX */
 form{
     margin: 25px 20px;
 }
 fieldset{
     border: none;
 }
-.box__date{
+.form__date{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -199,12 +216,11 @@ fieldset input, fieldset textarea{
     margin: 15px 0;
     padding: 15px;
     border-radius: 10px;
-    outline-color: var(--pink);
-    background-color: var(--backgrounColor);
-    color: var(--colorWhite);
+    background-color: var(--backgroun__color);
     font-size: 1.2rem;
+    outline-color: var(--pink);
 }
-#email, #mensaje, .box__date input{
+#email, #mensaje, .form__date input{
     width: 100%;
 }
 /*boton de enviar*/
@@ -216,11 +232,7 @@ fieldset button{
     font-size: 1rem;
     border: none;
     width: 120px;
-    color: var(--colorWhite);
     margin-top: 30px;
-}
-fieldset button:hover{
-    background-color: var(--pinkHover);
 }
 /* FOOTER */
 footer{
@@ -230,40 +242,42 @@ footer{
 footer h6{
     text-align: center;
     margin-top: 35px;
-    color: var(--colorWhite);
     font-style: italic;
 }
+h6 i{
+    color: lightseagreen;
+}
 /*  redes sociales  */
-#redes-sociales__container{
+#socialmedia__footer{
     display: flex;
     justify-content: space-around;
     padding: 0 60px;
 }
-#redes-sociales__container figure i{
+#socialmedia__footer figure i{
     padding: 13px;
-    background-color: var(--backgrounColor);
+    background-color: var(--backgroun__color);
     color: var(--pink);
     border-radius: 100%;
     border: 1px #FF0066 solid;
 }
-#redes-sociales__container a:hover figure i{
+#socialmedia__footer a:hover i{
     border: 1px #ffffff solid;
     background-color: var(--pink);
-    color: var(--colorWhite);
+    color: var(--color__white);
 }
 /* media queries 760px para tablet */
 @media (min-width: 768px){
     /*_________MAIN________*/
-    /* SOBRE MI __ BOX 1 */
-    #hello{
+    /* BOX 1 | ABOUT MY */
+    #about__hello{
         font-weight: 900;
         font-size: 2rem;
     }
     h1{
         font-size: 3rem;
     }
-    #quien__soy{
-        font-size: 1.4rem;
+    #about__quiensoy{
+        font-size: 1.2rem;
     }
     /*plus, uno los mismos estilos para acomodar las cajitas de mis conocimientos y mis proyectos*/
     /* MIS CONOCIMIENTOS *___/  /____* MIS PROYECTOS */  
@@ -273,10 +287,15 @@ footer h6{
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .card-skill, .project-card{
+    /* MIS CONOCIMIENTOS */
+    .skills__container--card{
+        width: 40%;
+    }
+     /* MIS PROYECTOS */
+    .projects__container--card{
         width: 45%;
     }
-    figure .ilust{
+    .card__icon{
         height: 170px;
     }
     /* CITA DEL PRINCIPITO */
@@ -285,27 +304,32 @@ footer h6{
     }
     blockquote p{
        font-size: 1.5rem;
+       margin: 15px 40px 40px;
     }
     blockquote h3{
         font-size: 2rem;
     }
-    /* CONTACTAME - contactame BOX */
-    #contact h3 + p{
-       margin-right: 280px;
+    /* CONTACTO */
+    /* CONTAINER BOX*/
+    .contact__container{
+        padding: 20px;
+     }
+     #contact h3 + p{
+        margin-right: 300px;
+     }
+     .contact__container--box{
+        padding-bottom: 40px;
     }
-    .contact-box{
-       display: flex;
-       justify-content: flex-end;
+    /* contactame BOX */ /**/
+    .contact__container--box--card{
+        display: flex;
+        justify-content: flex-start;
     }
-    .contact-box a{
-      margin-left: 20px;
-      width: 50%;
-    }
-    .contact-box i + figcaption{
-       margin-left: 8px;
-    }
-    /* CONTACTAME - escribeme BOX */
-    .box__date{
+    .contact__container--box--card a{
+        width: 50%;
+      }
+    /* escribeme BOX */
+    .form__date{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -322,10 +346,7 @@ footer h6{
     .nav__footer ul li{
         list-style: none;
     }
-    .nav__footer li a{
-        color: var(--colorWhite);
-    }
-    #redes-sociales__container{
+    #socialmedia__footer{
       padding: 0 220px;
     }
 }
@@ -336,118 +357,138 @@ footer h6{
     }
     /* HEADER */
     header{
-        background-color:#ffffff;
+        background-color: var(--color__white);
         width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
         left: 0; /* Posicionamos la cabecera al lado izquierdo */
         top: 0; /* Posicionamos la cabecera pegada arriba */
         position: fixed; /* Hacemos que la cabecera tenga una posición fija */
         box-shadow: 20px -60px 60px 40px rgba(0,0,0,0.50);
     }
-    header nav{
+    header .navbar{
          display: initial;
     }
-    header nav ul{
+    header .navbar ul{
         display: flex;
         justify-content: flex-end;
     }
     header ul li{
         list-style: none;
         margin: 38px 30px 40px 0;
-        text-transform: uppercase;
     }
     header li a{
-        color: var(--colorText);
+        color: var(--color__dark);
     }
-    /*boton contacto*/
-    .buttonNav{
+    /* botton para ir a la seccion contacto */
+    .navbar__btn{
         background-color: var(--pink);
-        padding: 7px 27px;
+        padding: 10px 30px;
         border-radius: 30px;
-        color: var(--colorWhite);
-        margin-right: 45px;
+        margin-right: 120px;
         }
     /*_________MAIN________*/
-    /* SOBRE MI */
+    /* ABOUT MY */
     #about{
         display: flex;
         justify-content: space-around;
         text-align: left;
+        padding-left: 90px;
     }
-    #hello{
+    /* BOX 1 | ABOUT MY */
+    #about article{
+        width: 60%;
+    }
+    #about__hello{
         font-size: 2.2rem;
-        margin: 140px 0 20px 90px;
+        margin: 140px 0 20px;
     }
     h1{
         font-size: 3.2rem;
-        margin: 0 0 10px 90px;
+        margin-top: 10px;
     }
-    #quien__soy{
+    #about__quiensoy{
         padding: 0;
-        margin: 0 0 20px 90px;
+        margin-top: 20px;
         font-size: 1.2rem;
     }
-    .firstButton{
-        margin: 30px 0 0 90px;
+    .about__btn{
+        margin-top: 30px;
+    }
+    /* BOX 2 | ABOUT MY */
+    #girl{
+        width: 40%;
+        margin-top: 40px;
+    }
+    #girl img{
+        width: 400px;
+    }
+    /*plus, mismo padding mas grande para mis conocimientos y mis proyectos*/
+    #skills, #projects{
+        padding-top: 180px;
     }
     /* MIS CONOCIMIENTOS */
     .skills__container{
         padding: 0 200px;
     }
-    .card-skill img{
-        width: 60%;
-    }
-    .card-skill{
+    .skills__container--card{
         padding: 40px 50px;
         width: 30%;
+    }
+    .skills__container--card img{
+        width: 60%;
     }
     /*MIS PROYECTOS*/
     .projects__container{
         padding: 0 100px;
     }
-    .project-card{
+    .projects__container--card{
         width: 30%;
     }
-    
-   
     /*PLUS - SIRVE PARA EL TITULO Y TEXTO DE LA SECCION MIS CONOCIMIENTOS Y LA SECCION MIS PROYECTOS*/
     #skills h2, #projects h2{
          font-size: 3rem;
     }
     /* CITA DEL PRINCIPITO */
     blockquote p{
-       padding: 0 320px;
+       padding: 0 300px;
     }
     blockquote p + h3{
-        font-size: 1.8rem;
+        font-size: 2.2rem;
     }
     blockquote figure img{
         width: 25%;
     }
     /* CONTACTAME */
     #contact{
-        background-color: var(--backgrounColor);
+        background-color: var(--backgroun__color);
         padding: 180px 120px;
     }
+    /* CONTAINER BOX */
     .contact__container{
         border-radius: 10px;
         border: 1px #bdbdbd solid;
-        background-color: var(--colorWhite);
+        background-color: var(--color__white);
         display: flex;
         justify-content: space-between;
-        padding: 120px 20px 60px;
+        padding: 80px 40px 40px;
         width: 100%;
     }
-    /*contactame BOX */
-    .contact-box{
+    #contact h3 + p{
+        margin-right: 80px;
+    }
+    #contact h3{
+        font-size: 3rem;
+    }
+    /* contactame BOX */
+    .contact__container--box--card{
         display: flex;
         flex-direction: column;
     }
-    #contact h3 + p{
-        margin-right: 200px;
+    .contact__container--box--card figure{
+        margin-left: 10px;
     }
     
-    /*escribeme BOX */
-    .box__date article{
+    /* escribeme BOX */
+    .form__date article{
         width: 48%;
     }
     /*FOOTER*/
@@ -456,7 +497,7 @@ footer h6{
         justify-content: space-around;
         padding: 50px 460px;
     }
-    #redes-sociales__container{
+    #socialmedia__footer{
         padding: 0 560px;
       }
 }

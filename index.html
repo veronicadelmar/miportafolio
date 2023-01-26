@@ -9,7 +9,7 @@
     <title>Verónica Guiñan ~ Verolicious</title>
     <link rel="shortcut icon" href="./img/fotoDePerfil.jpg" type="image/x-icon">
     <!-- devicon / link para llamar los DeveloperIcon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="styleshe et" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!--link de font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -22,104 +22,104 @@
 <body>
     <!-- _________HEADER_________ -->
     <header>
-        <!-- navBar -->
-        <nav>
+        <!-- navbar -->
+        <nav class="navbar">
             <ul>
                 <li>
-                    <a class="itemNav" href="#about">hola</a>
+                    <a class="navbar__item upper" href="#about">hola</a>
                 </li>
                 <li>
-                    <a class="itemNav" href="#skills">conocimientos</a>
+                    <a class="navbar__item upper" href="#skills">conocimientos</a>
                 </li>
                 <li>
-                    <a class="itemNav" href="#projects">proyectos</a>
+                    <a class="navbar__item upper" href="#projects">proyectos</a>
                 </li>
                 <!-- botton para ir a la seccion contacto -->
                 <li>
-                    <a class="buttonNav" href="#contact">contacto</a>
+                    <a class="navbar__btn upper white btn__hover" href="#contact">contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- _________MAIN________ -->
     <main>
-        <!-- SOMBRE MI -->
+        <!-- ABOUT MY -->
         <section id="about">
-            <!-- BOX 1 DE ABOUT -->
+            <!-- BOX 1 | ABOUT MY -->
             <article>
-                <p id="hello">¡Hola! Soy</p>
+                <p id="about__hello">¡Hola! Soy</p>
                 <h1>Verónica del Mar Guiñan López</h1>
-                <p id="quien__soy">Ingeniera, Desarrolladora Front End y fan de Harry Potter</p>
-                <!-- boton para ir a la seccion proyectos -->
-                <button class="firstButton">
-                    <a href="#projects">LO QUE HAGO</a>
+                <p id="about__quiensoy">Ingeniera, Desarrolladora Front End y fan de Harry Potter</p>
+                <!-- ABOUT MY boton para ir a la seccion proyectos -->
+                <button class="about__btn btn__hover">
+                    <a href="#projects" class="white upper">lo que hago</a>
                 </button>
             </article>
-            <!-- BOX 2 DE ABOUT -->
+            <!-- BOX 2 | ABOUT MY -->
             <figure id="girl">
-                <img src="./img/devGirl_like.png" alt="chica desarrollado front end">
+                <img src="./img/devGirl_like.png" alt="chica desarrolladora front end">
             </figure>
         </section>
         <!-- MIS CONOCIMIENTOS -->
         <section id="skills">
-            <h2>Mis conocimientos</h2>
-            <p>Las tecnologías en las que mejor me desempeño son:</p>
+            <h2 class="fs__h2">Mis conocimientos</h2>
+            <p class="h2--p">Las tecnologías en las que mejor me desempeño son:</p>
             <!-- skills container -->
             <article class="skills__container">
                 <!-- skills card html -->
-                <figure class="card-skill">  
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="logo de html" />
-                    <figcaption>HTML 5</figcaption>
-                </figure>
+                    <figure class="skills__container--card">  
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="logo de html" />
+                        <figcaption class="upper">html 5</figcaption>
+                    </figure>
                 <!-- skills card css -->
-                <figure class="card-skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="logo de css" />
-                    <figcaption>CCS 3</figcaption>
-                </figure>
+                    <figure class="skills__container--card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="logo de css" />
+                        <figcaption class="upper">css 3</figcaption>
+                    </figure>
                 <!-- skills card sass -->
-                <figure class="card-skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="logo de sass" />
-                    <figcaption>SASS</figcaption>
-                </figure>
+                    <figure class="skills__container--card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="logo de sass" />
+                        <figcaption class="upper">sass</figcaption>
+                    </figure>
                 <!-- skills card javascript -->
-                <figure class="card-skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="logo de javascript" />
-                    <figcaption>JAVASCRIPT</figcaption>
-                </figure>
+                    <figure class="skills__container--card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="logo de javascript" />
+                        <figcaption class="upper">javascript</figcaption>
+                    </figure>
                 <!-- skills card react -->
-                <figure class="card-skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="logo de react" />
-                    <figcaption>REACT</figcaption>
-                </figure>
+                    <figure class="skills__container--card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="logo de react" />
+                        <figcaption class="upper">react js</figcaption>
+                    </figure>
                 <!-- skills card git -->
-                <figure class="card-skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="logo de git" />
-                    <figcaption>GIT</figcaption>
-                </figure>
+                    <figure class="skills__container--card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="logo de git" />
+                        <figcaption class="upper">git</figcaption>
+                    </figure>
                 <!-- skills card webflow -->
-                <figure class="card-skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" alt="logo de webflow" />
-                    <figcaption>WEBFLOW</figcaption>
-                 </figure>
-                 <!-- skills card boostrap -->
-                 <figure class="card-skill">   
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="logo de bootstrap"/>
-                    <figcaption>BOOTSTRAP</figcaption>
-                 </figure>
-                 <!-- skills card MYSQl -->
-                 <figure class="card-skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="logo de mysql" />
-                    <figcaption>MYSQL</figcaption>
-                 </figure>
-                 <!-- skills card figma -->
-                 <figure class="card-skill">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="logo de figma"/>
-                    <figcaption>FIGMA</figcaption>
-                 </figure>
-            </article>
+                    <figure class="skills__container--card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" alt="logo de webflow" />
+                        <figcaption class="upper">webflow</figcaption>
+                    </figure>
+                <!-- skills card boostrap -->
+                    <figure class="skills__container--card">   
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="logo de bootstrap"/>
+                        <figcaption class="upper">bootstrap</figcaption>
+                    </figure>
+                <!-- skills card MYSQl -->
+                    <figure class="skills__container--card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="logo de mysql" />
+                        <figcaption class="upper">mysql</figcaption>
+                    </figure>
+                <!-- skills card figma -->
+                    <figure class="skills__container--card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="logo de figma"/>
+                        <figcaption class="upper">figma</figcaption>
+                    </figure>
+                </article>
         </section>
-        <!-- una cita / no tiene link en el navbar -->
-        <blockquote cite="#">
+        <!-- CITA DEL PRINCIPITO -->
+        <blockquote cite="#" class="white">
             <i class="fa-solid fa-quote-right"></i>
             <p>Es una locura odiar a una rosa sólo porque te pinchó y es una locura renunciar a tus sueños porque uno no se cumplió.</p>
             <h3>El principito</h3>
@@ -129,101 +129,103 @@
         </blockquote>
         <!-- MIS PROYECTOS -->
         <section id="projects">
-            <h2>Mis proyectos</h2>
-            <p>Algunos de mis trabajos realizados son:</p>
-            <!-- skills container -->
+            <h2 class="fs__h2">Mis proyectos</h2>
+            <p class="h2--p">Algunos de mis trabajos realizados son:</p>
+            <!-- projects container -->
             <section class="projects__container">
                 <!-- project card - portafolio --> 
-                <article class="project-card">
-                    <a href="#" target="_blank">
-                       <figure>
-                           <img src="./img/portafolio.png" alt="imagen del proyecto">
-                           <figcaption>Portafolio</figcaption>
-                       </figure>
-                    </a>
-               </article>
+                    <article class="projects__container--card">
+                        <a href="https://veronicadelmar.github.io/miportafolio/" target="_blank">
+                            <figure>
+                                <img src="./img/portafolio.png" alt="imagen del proyecto">
+                                <figcaption>Portafolio</figcaption>
+                            </figure>
+                        </a>
+                    </article>
                <!-- project card - mercado liebre --> 
-               <article class="project-card">
-                    <a href="https://veronicadelmar.github.io/mercado-liebre/" target="_blank">
-                       <figure>
-                           <img src="./img/mercadoLiebre.png" alt="imagen del proyecto">
-                           <figcaption>Mercado liebre</figcaption>
-                        </figure>
-                   </a>
-               </article>
+                    <article class="projects__container--card">
+                        <a href="https://veronicadelmar.github.io/mercado-liebre/" target="_blank">
+                            <figure>
+                                <img src="./img/mercadoLiebre.png" alt="imagen del proyecto">
+                                <figcaption>Mercado liebre</figcaption>
+                             </figure>
+                        </a>
+                     </article>
                <!-- project card - webflow @dingusandzazzy.com --> 
-               <article class="project-card">
-                   <a href="https://preview.webflow.com/preview/elliotsonstractors?utm_medium=preview_link&utm_source=dashboard&utm_content=elliotsonstractors&preview=b2552e7df1d2828b874fe17ef5b0908d&workflow=preview" target="_blank">
-                        <figure>
-                           <img src="./img/webflow@dingusandzazzy.com__cliente.png" alt="imagen del proyecto">
-                           <figcaption>Prueba webflow</figcaption>
-                        </figure>
-                    </a>
-                </article>
+                     <article class="projects__container--card">
+                          <a href="https://preview.webflow.com/preview/elliotsonstractors?utm_medium=preview_link&utm_source=dashboard&utm_content=elliotsonstractors&preview=b2552e7df1d2828b874fe17ef5b0908d&workflow=preview" target="_blank">
+                            <figure>
+                                 <img src="./img/webflow@dingusandzazzy.com__cliente.png" alt="imagen del proyecto">
+                                 <figcaption>Prueba webflow</figcaption>
+                            </figure>
+                         </a>
+                     </article>
                 <!-- project card - micv --> 
-                <article class="project-card">
-                    <a href="#" target="_blank">
-                         <figure>
-                             <img src="./img/404.svg" alt="imagen del proyecto">
-                             <figcaption>Mi cv</figcaption>
-                         </figure>
-                     </a>
-                </article>
+                    <article class="projects__container--card">
+                        <a href="#" target="_blank">
+                            <figure>
+                                <img src="./img/404.svg" class="card__icon" alt="imagen del proyecto">
+                                <figcaption>Mi cv</figcaption>
+                            </figure>
+                        </a>
+                    </article>
                 <!-- project card - generador de memes --> 
-                <article class="project-card">
-                     <a href="#" target="_blank">
-                         <figure>
-                             <img src="./img/creadorDeMemes.svg" class="ilust" alt="imagen del proyecto">
-                             <figcaption>Generador de memes</figcaption>
-                         </figure>
-                    </a>
-                </article>
+                    <article class="projects__container--card">
+                        <a href="#" target="_blank">
+                            <figure>
+                                <img src="./img/creadorDeMemes.svg" class="card__icon" alt="imagen del proyecto">
+                                <figcaption>Generador de memes</figcaption>
+                            </figure>
+                        </a>
+                    </article>
                 <!-- project card - match 3 --> 
-                <article class="project-card">
-                    <a href="#" target="_blank">
-                        <figure>
-                            <img src="./img/match.svg" class="ilust" alt="imagen del proyecto">
-                            <figcaption>Match 3</figcaption>
-                        </figure>
-                   </a>
-               </article>
+                    <article class="projects__container--card">
+                        <a href="#" target="_blank">
+                            <figure>
+                                <img src="./img/match.svg" class="card__icon" alt="imagen del proyecto">
+                                <figcaption>Match 3</figcaption>
+                            </figure>
+                        </a>
+                    </article>
                 <!-- project card -controlador de gastos --> 
-                <article class="project-card">
-                    <a href="#" target="_blank">
-                        <figure>
-                            <img src="./img/controladorDeGastos.svg" class="ilust" alt="imagen del proyecto">
-                            <figcaption>Controlador de gastos</figcaption>
-                        </figure>
-                   </a>
-               </article>
+                    <article class="projects__container--card">
+                        <a href="#" target="_blank">
+                            <figure>
+                                <img src="./img/controladorDeGastos.svg" class="card__icon" alt="imagen del proyecto">
+                                <figcaption>Controlador de gastos</figcaption>
+                            </figure>
+                         </a>
+                    </article>
                <!-- project card - administrador de reuniones --> 
-               <article class="project-card">
-                    <a href="#" target="_blank">
-                        <figure>
-                             <img src="./img/controladorDeGastos.svg" class="ilust" alt="imagen del proyecto">
-                             <figcaption>Administrador de reuniones</figcaption>
-                         </figure>
-                    </a>
-                </article>
+                     <article class="projects__container--card">
+                        <a href="#" target="_blank">
+                            <figure>
+                                <img src="./img/calendar.svg" class="card__icon" alt="imagen del proyecto">
+                                <figcaption>Administrador de reuniones</figcaption>
+                            </figure>
+                        </a>
+                     </article>
                 <!-- project card - todo app --> 
-               <article class="project-card">
-                     <a href="#" target="_blank">
-                         <figure>
-                              <img src="./img/topApp.svg" class="ilust" alt="imagen del proyecto">
-                              <figcaption>Todo app</figcaption>
-                         </figure>
-                     </a>
-                </article>
+                     <article class="projects__container--card">
+                        <a href="#" target="_blank">
+                            <figure>
+                                <img src="./img/topApp.svg" class="card__icon" alt="imagen del proyecto">
+                                <figcaption>Todo app</figcaption>
+                            </figure>
+                        </a>
+                     </article>
             </section>
         </section>
-        <!-- CONTACTAME -->
+        <!-- CONTACTO -->
         <section id="contact">
             <section class="contact__container">
+                <!-- CONTAINER BOX-->
                     <!-- contactame BOX -->
-                    <article class="box">
+                    <article class="contact__container--box">
                         <h3>Contactame</h3>
                         <p>Si deseas comunicarte conmigo por algun asunto profesional o colaborativo no dudes en contactarme.</p>
-                        <article class="contact-box">
+                        <!-- card #1 -->
+                        <article class="contact__container--box--card">
                             <a href="https://github.com/veronicadelmar" target="_blank" rel="noopener noreferrer">
                                 <figure>
                                     <i class="fa-brands fa-github-alt"></i>
@@ -233,11 +235,12 @@
                             <a href="https://www.linkedin.com/in/veronicagui%C3%B1an/" target="_blank" rel="noopener noreferrer">
                                 <figure>
                                     <i class="fa-brands fa-linkedin-in"></i>
-                                    <figcaption>Verónica del Mar Guiñan López</figcaption>
+                                    <figcaption>Verónica Guiñan</figcaption>
                                 </figure>
                             </a>
                         </article>
-                        <article class="contact-box">
+                        <!-- card #2 -->
+                        <article class="contact__container--box--card">
                             <a href="mailto:unachamaqueprograma@gmail.com" target="_blank">
                                 <figure>
                                     <i class="fa-solid fa-envelope"></i>
@@ -252,12 +255,13 @@
                             </a>
                         </article>
                     </article>
+                <!-- CONTAINER BOX-->
                     <!-- escribeme BOX -->
-                    <article class="box">
+                    <article class="contact__container--box">
                         <h3>Escríbeme</h3>
                         <form action="./index.html" method="get">
                             <fieldset>
-                                <section class="box__date">
+                                <section class="form__date">
                                     <article>
                                         <label for="text">Nombre *</label>
                                         <input type="text" name="name" id="name" class="name" placeholder="Ada" required>
@@ -273,7 +277,7 @@
                                     <label for="text">Mensaje *</label>
                                     <textarea name="mensaje" id="mensaje" placeholder="Escriba un mensaje aquí" cols="25" rows="6" required></textarea>
                                     <a href="./index.html">
-                                         <button type="submit">Enviar</button>
+                                         <button type="submit" class="white btn__hover ">Enviar</button>
                                     </a>
                                 </section>
                             </fieldset>
@@ -286,14 +290,14 @@
         <!-- navFooter -->
        <nav class="nav__footer">
             <ul>
-                <li><a href="#about">HOLA</a></li>
-                <li><a href="#skills">CONOCIMIENTOS</a></li>
-                <li><a href="#projects">PROYECTOS</a></li>
-                <li><a href="#contacts">CONTACTOS</a></li>
+                <li><a href="#about" class="upper white">hola</a></li>
+                <li><a href="#skills" class="upper white">conocimientos</a></li>
+                <li><a href="#projects" class="upper white">proyectos</a></li>
+                <li><a href="#contacts" class="upper white">contactos</a></li>
             </ul>
         </nav>
         <!-- redes sociales -->
-        <section id="redes-sociales__container">
+        <section id="socialmedia__footer">
             <a href="https://github.com/veronicadelmar" target="_blank">
                 <figure>
                     <i class="fa-brands fa-github-alt circle"></i>
@@ -315,7 +319,7 @@
                 </figure>
             </a>
         </section>
-        <h6>Hecho con <i class="fa-solid fa-heart"></i> por Verolicious</h6>
+        <h6 class="white">Hecho con <i class="fa-solid fa-heart"></i> por Verolicious</h6>
     </footer>
 </body>
 </html>
