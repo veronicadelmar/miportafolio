@@ -21,44 +21,24 @@
 .upper{
     text-transform: uppercase;
 }
-/* hover para todos los botones */
-.btn__hover:hover{
-    transition-property: all;
-    background-color: var(--pink__hover);
-    transition-duration: 1s;
-}
-/* mismo font size para los h2*/
-.fs__h2{
+/* mismo font size para los h2 de about y de projects*/
+.skills__h2, .projects__h2{
     font-size: 2.6rem;
 }
 /* estos estilos son para las p que estan debajo de los h2 (en mis conocimientos y mis proyectos), comparten el mismo estilo*/
-.h2--p{
+.skills__p, .projects__p{
     font-size: 1.2rem;
     color: var(--color__text);
     padding: 50px 0;
-}
-/* PLUS estos estilos me sirven para el hover de las cajitas de mis conocimientos y las cajitas de mis proyectos */
-.skills__container--card:hover figcaption, .projects__container--card:hover, .projects__container--card:hover figcaption{
-    color: var(--pink);
-    opacity: 1;
-    border-color: var(--pink);
-}
-/* BODY */
-/* whatsapp */
-.whatsapp{
-    color: rgb(103,193,94);
-    font-size: 2rem;
-    position:fixed;
-    right: 5px;
-    top: 15px;
-    z-index: 0;
 }
 /* _________HEADER_________ */
 header{
     z-index: 1;
 }
-/* navbar */
-.navbar, .nav__footer{
+/* navbar and whatsapp */ 
+/* uso las clases del navbar de header, el navbar del footer y el boton de whatsapp con el mismo estilos porque para movil se esconden y para no escribir triple codigo los escondo a los tres en esta misma linea de codigo :)! */
+/* whatsapp*/ /*escondi el boton de whatsapp para que se no se vea recargada la web, al momento que la visualicen en mobile*/
+.navbar, .navbar__footer, .whatsapp{
     display: none;
 }
 /* ##Todos los ancla## */
@@ -81,25 +61,24 @@ h1{
     font-family: 'Nerko One', cursive;
     font-size: 2.6rem;
     margin: 10px 0 20px;
-}
-/* PLUS para darle el mismo color aL H1 y a los navbar__item cuando hacemos hover*/
-h1, .navbar__item:hover{
     color: var(--pink);
 }
 #about__quiensoy{
     font-size: 1rem;
     color: var(--color__text);
     padding: 0 40px;
+    margin-bottom: 50px;
 }
 /* ABOUT MY boton para ir a la seccion proyectos */
 .about__btn{
     background-color: var(--pink);
-    padding: 13px 50px;
+    padding: 13px 40px;
     border-radius: 30px;
     font-size: 1rem;
     border: none;
     margin: 40px 0 20px;
 }  
+/* BOX 2 | ABOUT MY */
 #girl img{
     width: 320px;
 }
@@ -117,15 +96,8 @@ h1, .navbar__item:hover{
     padding: 40px 60px;
     background-color: var(--color__white);
     border-radius: 10px;
-    border: 1px #bdbdbd solid;
+    border: 1px var(--color__border) solid;
     margin-bottom: 15px;
-    opacity: 0.8;
-}
-.skills__container--card:hover{
-    transition-property: all;
-    transition-duration: 1s;
-    border-color: var(--pink);
-    opacity: 1;
 }
 .skills__container--card img + figcaption{
     font-weight: bold;
@@ -163,15 +135,12 @@ blockquote img{
 /* project CARD */
 .projects__container--card{
     border-radius: 10px;
-    border: 1px #bdbdbd solid;
+    border: 1px var(--color__border) solid;
     margin-bottom: 20px;
 }
 .projects__container--card img{
     width: 250px;
     height: 220px;
-}
-.projects__container--card:hover{
-    box-shadow: -5px 8px 5px 0px rgba(255,91,157,1);
 }
 .card__icon{
     margin: 25px 0;
@@ -181,7 +150,7 @@ blockquote img{
     color: var(--color__text__two);
     padding-bottom: 4px;
     margin: 0 50px 20px;
-    border-bottom: 2px #2e2e31 solid;
+    border-bottom: 1px var(--color__text__two) solid;
 }
 /* CONTACTO */
 #contact h3{
@@ -207,24 +176,13 @@ blockquote img{
 .contact__container--box--card i + figcaption{
     color: var(--color__text__two);
     font-size: 1rem;
-    font-weight: 300;
-    margin: 20px 0;
+    font-weight: 400;
+    margin: 10px;
 }
 .contact__container--box--card i{
     color: var(--pink);
     font-size: 1.5rem;
-    padding: 10px;
-    margin: 10px;
-}
-.contact__container--box--card a:hover figcaption{
-    color: var(--pink);
-}
-.contact__container--box--card a:hover figure i{
-    background-color: var(--pink);
-    border-radius: 100%;
-    color: var(--color__white);
-    transition-property: all;
-    transition-duration: 0.3s;
+    margin: 8px;
 }
 /* escribeme BOX */
 form{
@@ -239,13 +197,13 @@ fieldset{
     flex-wrap: wrap;
 }
 fieldset input, fieldset textarea{
-    border: none;
     margin: 15px 0;
     padding: 15px;
     border-radius: 10px;
     background-color: var(--backgroun__color);
     font-size: 1.2rem;
-    outline-color: var(--pink);
+    border: 2px var(--pink) solid;
+    outline: transparent;
 }
 #email, #mensaje, .form__date input{
     width: 100%;
@@ -261,45 +219,59 @@ fieldset button{
     width: 120px;
     margin-top: 30px;
 }
-/* FOOTER */
+fieldset button:active{
+    background-color: var(--pink__hover);
+    color: var(--color__dark);
+    outline: 0;
+}
+/* _________FOOTER________ */
 footer{
     background-color: var(--pink);
     padding: 50px 0;
 }
-footer h6{
+footer h4{
     text-align: center;
     margin-top: 35px;
     font-style: italic;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
-h6 i{
-    color: lightseagreen;
+h4 i{
+    color: #e8fc03;
 }
 /*  redes sociales  */
-#socialmedia__footer{
+#footer__socialmedia{
     display: flex;
     justify-content: space-around;
     padding: 0 60px;
 }
-#socialmedia__footer figure i{
+#footer__socialmedia figure i{
     padding: 13px;
     background-color: var(--backgroun__color);
     color: var(--pink);
     border-radius: 100%;
-    border: 1px #FF0066 solid;
-}
-#socialmedia__footer a:hover i{
-    border: 1px #ffffff solid;
-    background-color: var(--pink);
-    color: var(--color__white);
+    border: 1px var(--pink) solid;
 }
 /* media queries 760px para tablet */
 @media (min-width: 768px){
-    /*_________MAIN________*/
+    /* _________HEADER_________ */
      /* whatsapp */
      .whatsapp{
+        display: initial;
         font-size: 3rem;
         top: 30px;
+        color: rgb(103,193,94);
+        position:fixed;
+        right: 8px;
+        z-index: 0;
         }
+    /* hover para todos los botones */ /* los coloque a partir de este break point para que en mobile no se vean transiciones bruscas, soloamente a partir de tablet :)! */
+    .btn__hover:hover{
+    transition-property: all;
+    background-color: var(--pink__hover);
+    transition-duration: 1s;
+    }
+    /* _________MAIN_________ */
     /* BOX 1 | ABOUT MY */
     #about__hello{
         font-weight: 900;
@@ -310,6 +282,10 @@ h6 i{
     }
     #about__quiensoy{
         font-size: 1.2rem;
+    }
+    /* BOX 2 | ABOUT MY */
+    #girl img{
+        width: 450px;
     }
     /*plus, uno los mismos estilos para acomodar las cajitas de mis conocimientos y mis proyectos*/
     /* MIS CONOCIMIENTOS *___/  /____* MIS PROYECTOS */  
@@ -322,13 +298,18 @@ h6 i{
     /* MIS CONOCIMIENTOS */
     .skills__container--card{
         width: 40%;
+        box-shadow: 3px 5px 5px -4px var(--color__dark);
     }
-     /* MIS PROYECTOS */
+    /* MIS PROYECTOS */
     .projects__container--card{
         width: 45%;
+        box-shadow: -3px -2px 8px -3px var(--color__dark)
     }
     .card__icon{
         height: 170px;
+    }
+    .projects__container--card img + figcaption{
+        border-bottom: none;
     }
     /* CITA DEL PRINCIPITO */
     blockquote img{
@@ -359,41 +340,57 @@ h6 i{
     }
     .contact__container--box--card a{
         width: 50%;
-      }
+    }
+    .contact__container--box--card a figcaption{
+        margin: 20px 0;
+    }
+    .contact__container--box--card a:hover figcaption{
+        color: var(--pink);
+    }
+    .contact__container--box--card i{
+        padding: 10px;
+    }
+    .contact__container--box--card a:hover figure i{
+        background-color: var(--pink);
+        border-radius: 100%;
+        color: var(--color__white);
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
     /* escribeme BOX */
     .form__date{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    /* FOOTER */
-    .nav__footer{
+    fieldset input, fieldset textarea{
+        border: none;
+    }
+    fieldset input:focus, fieldset textarea:focus{
+        outline: solid var(--pink) 2px; 
+    }
+    /* _________FOOTER________ */
+    .navbar__footer{
       display: initial;
     }
-    .nav__footer ul{
+    .navbar__footer .navbar__footer--ul{
         display: flex;
         justify-content: space-around;
         padding: 30px 160px;
     }
-    .nav__footer ul li{
+    .navbar__footer--li{
         list-style: none;
     }
-    #socialmedia__footer{
+    /*  redes sociales */
+    #footer__socialmedia{
       padding: 0 220px;
     }
-}
 /* media queries 1200px para desktop */
 @media (min-width: 1200px){
     body{
         padding-top: 50px;   
     }
-       /* whatsapp */
-       .whatsapp{
-        font-size: 4rem;
-        top: 120px;
-        right: 22px;
-        }
-    /* HEADER */
+    /* _________HEADER_________ */
     header{
         background-color: var(--color__white);
         width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
@@ -405,16 +402,19 @@ h6 i{
     header .navbar{
          display: initial;
     }
-    header .navbar ul{
+    .navbar .navbar__ul{
         display: flex;
         justify-content: flex-end;
     }
-    header ul li{
+    .navbar__ul .navbar__ul--li{
         list-style: none;
         margin: 38px 30px 40px 0;
     }
-    header li a{
+    .navbar__ul--item{
         color: var(--color__dark);
+    }
+    .navbar__ul--item:hover{
+    color: var(--pink);
     }
     /* botton para ir a la seccion contacto */
     .navbar__btn{
@@ -423,6 +423,12 @@ h6 i{
         border-radius: 30px;
         margin-right: 120px;
         }
+    /* whatsapp */
+    .whatsapp{
+        font-size: 4rem;
+        top: 120px;
+        right: 20px;
+     }
     /*_________MAIN________*/
     /* ABOUT MY */
     #about{
@@ -450,15 +456,55 @@ h6 i{
     }
     .about__btn{
         margin-top: 30px;
+        -webkit-animation: tracking-in-expand-fwd-top 0.8s ease-out both;
+	     animation: tracking-in-expand-fwd-top 0.8s ease-out both;
+    }      
+    @-webkit-keyframes tracking-in-expand-fwd-top {
+        0% {
+          letter-spacing: 0.2em;
+          -webkit-transform: translateZ(-700px) translateY(-500px);
+          transform: translateZ(-700px) translateY(-500px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0) translateY(0);
+          transform: translateZ(0) translateY(0);
+          opacity: 1;
+        }
+      }
+    @keyframes tracking-in-expand-fwd-top {
+        0%{
+          letter-spacing: 0.2em;
+          -webkit-transform: translateZ(-700px) translateY(-500px);
+          transform: translateZ(-700px) translateY(-500px);
+          opacity: 0;
+        }
+        40%{
+          opacity: 0.6;
+        }
+        100%{
+          -webkit-transform: translateZ(0) translateY(0);
+           transform: translateZ(0) translateY(0);
+           opacity: 1;
+        }
+     }
+    .about__btn:hover{
+         box-shadow: 0 10px 10px 0 var(--color__border);
+         transition: all 0.5s;
     }
     /* BOX 2 | ABOUT MY */
     #girl{
         width: 40%;
         margin-top: 40px;
+        margin-right: 100px;
     }
     #girl img{
         width: 400px;
     }
+    /* MIS CONOCIMIENTOS *___/  /____* MIS PROYECTOS */  
     /*plus, mismo padding mas grande para mis conocimientos y mis proyectos*/
     #skills, #projects{
         padding-top: 180px;
@@ -470,6 +516,16 @@ h6 i{
     .skills__container--card{
         padding: 40px 50px;
         width: 30%;
+        opacity: 0.8;
+    }
+    .skills__container--card:hover{
+        transition-property: all;
+        transition-duration: 1s;
+        border-color: var(--pink);
+        opacity: 1;
+    }
+    .skills__container--card:hover figcaption{
+        color: var(--pink);
     }
     .skills__container--card img{
         width: 60%;
@@ -480,6 +536,38 @@ h6 i{
     }
     .projects__container--card{
         width: 30%;
+        box-shadow: none;
+    }
+    .projects__container--card:hover{
+        transition-property: all;
+        transition-duration: 1s;
+        box-shadow: -5px 3px 5px -4px rgba(255,91,157,1);
+        border-color: var(--pink);
+    }
+    .projects__container .projects__container--card:nth-child(2):hover{
+        box-shadow: -5px 3px 5px -4px rgb(234,200,40);
+        border-color: rgb(234,200,40);
+    }
+    .projects__container .projects__container--card:nth-child(3):hover{
+        box-shadow: -5px 3px 5px -4px rgb(241,108,3);
+        border-color: rgb(241,108,3);
+    }
+    .projects__container--card img + figcaption{
+        position: relative;
+    }
+    .projects__container--card img + figcaption:before{
+        content: "";
+        background-color: var(--color__text__two);
+        width: 0;
+        display: block;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all .3s;
+    }
+    .projects__container--card a:hover figcaption::before{
+        width: 100%;
     }
     /*PLUS - SIRVE PARA EL TITULO Y TEXTO DE LA SECCION MIS CONOCIMIENTOS Y LA SECCION MIS PROYECTOS*/
     #skills h2, #projects h2{
@@ -528,17 +616,16 @@ h6 i{
     .form__date article{
         width: 48%;
     }
-    /*FOOTER*/
-    .nav__footer ul{
-        display: flex;
-        justify-content: space-around;
-        padding: 50px 460px;
+    /* _________FOOTER________ */
+    .navbar__footer .navbar__footer--ul{
+        padding: 30px 450px;
     }
-    #socialmedia__footer{
+    #footer__socialmedia{
         padding: 0 560px;
-      }
+    }
+      #footer__socialmedia a:hover i{
+        border: 1px #ffffff solid;
+        background-color: var(--pink);
+        color: var(--color__white);
+    }
 }
-
-
-
-

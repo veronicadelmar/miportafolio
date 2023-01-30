@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Verónica Guiñan, con proyectos propios e innovadores, contrata a una chica que programa">
+    <meta name="keywords" content="developer, desarrolladora web, programadora, html, css, javascript, react, front end, desarrollo front end, programación, diseño web, webflow, figma">
     <!-- titulo + icon / solapa de la web -->
-    <title>Verónica Guiñan ~ Verolicious</title>
-    <link rel="shortcut icon" href="./img/fotoDePerfil.jpg" type="image/x-icon">
+    <title>Verónica Guiñan</title>
+    <link rel="shortcut icon" href="./img/foto-de-perfil-vero.png" type="image/x-icon">
     <!-- devicon / link para llamar los DeveloperIcon -->
     <link rel="styleshe et" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!--link de font awesome-->
@@ -20,30 +22,30 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- whatsapp-->
-    <a href="https://api.whatsapp.com/send?phone=5491124002381" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a>
     <!-- _________HEADER_________ -->
     <header>
-        <!-- whatsapp-->
-        <a href="https://api.whatsapp.com/send?phone=5491124002381" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a>
         <!-- navbar -->
         <nav class="navbar">
-            <ul>
-                <li>
-                    <a class="navbar__item upper" href="#about">hola</a>
+            <ul class="navbar__ul">
+                <li class="navbar__ul--li">
+                    <a class="navbar__ul--item upper" href="#about">hola</a>
                 </li>
-                <li>
-                    <a class="navbar__item upper" href="#skills">conocimientos</a>
-                </li>
-                <li>
-                    <a class="navbar__item upper" href="#projects">proyectos</a>
+                <li class="navbar__ul--li">
+                    <a class="navbar__ul--item upper" href="#skills">conocimientos</a>
+                </li >
+                <li class="navbar__ul--li">
+                    <a class="navbar__ul--item upper" href="#projects">proyectos</a>
                 </li>
                 <!-- botton para ir a la seccion contacto -->
-                <li>
+                <li class="navbar__ul--li">
                     <a class="navbar__btn upper white btn__hover" href="#contact">contacto</a>
                 </li>
             </ul>
         </nav>
+        <!-- icono de whatsapp-->
+        <a href="https://api.whatsapp.com/send?phone=5491124002381" target="_blank" class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
     </header>
     <!-- _________MAIN________ -->
     <main>
@@ -52,72 +54,70 @@
             <!-- BOX 1 | ABOUT MY -->
             <article>
                 <p id="about__hello">¡Hola! Soy</p>
-                <h1>Verónica del Mar Guiñan López</h1>
+                <h1>Verónica Guiñan</h1>
                 <p id="about__quiensoy">Ingeniera, Desarrolladora Front End y fan de Harry Potter</p>
                 <!-- ABOUT MY boton para ir a la seccion proyectos -->
-                <button class="about__btn btn__hover">
-                    <a href="#projects" class="white upper">lo que hago</a>
-                </button>
+                <a href="#projects" class="white upper about__btn btn__hover">lo que hago</a>
             </article>
             <!-- BOX 2 | ABOUT MY -->
             <figure id="girl">
-                <img src="./img/devGirl_like.png" alt="chica desarrolladora front end">
+                <img src="./img/devGirl_like.png" alt="Desarrolladora front end">
             </figure>
         </section>
         <!-- MIS CONOCIMIENTOS -->
         <section id="skills">
-            <h2 class="fs__h2">Mis conocimientos</h2>
-            <p class="h2--p">Las tecnologías en las que mejor me desempeño son:</p>
+            <h2 class="skills__h2">Mis conocimientos</h2>
+            <p class="skills__p">Las tecnologías en las que mejor me desempeño son:</p>
             <!-- skills container -->
             <article class="skills__container">
                 <!-- skills card html -->
                     <figure class="skills__container--card">  
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="logo de html" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="html" />
                         <figcaption class="upper">html 5</figcaption>
                     </figure>
                 <!-- skills card css -->
                     <figure class="skills__container--card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="logo de css" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="css" />
                         <figcaption class="upper">css 3</figcaption>
                     </figure>
                 <!-- skills card sass -->
                     <figure class="skills__container--card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="logo de sass" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" />
                         <figcaption class="upper">sass</figcaption>
                     </figure>
                 <!-- skills card javascript -->
                     <figure class="skills__container--card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="logo de javascript" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="javascript" />
                         <figcaption class="upper">javascript</figcaption>
                     </figure>
                 <!-- skills card react -->
                     <figure class="skills__container--card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="logo de react" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" />
                         <figcaption class="upper">react js</figcaption>
                     </figure>
                 <!-- skills card git -->
                     <figure class="skills__container--card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="logo de git" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="git" />
                         <figcaption class="upper">git</figcaption>
                     </figure>
                 <!-- skills card webflow -->
                     <figure class="skills__container--card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" alt="logo de webflow" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" alt="webflow" />
                         <figcaption class="upper">webflow</figcaption>
                     </figure>
                 <!-- skills card boostrap -->
                     <figure class="skills__container--card">   
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="logo de bootstrap"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap"/>
                         <figcaption class="upper">bootstrap</figcaption>
                     </figure>
                 <!-- skills card MYSQl -->
                     <figure class="skills__container--card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="logo de mysql" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql" />
                         <figcaption class="upper">mysql</figcaption>
                     </figure>
                 <!-- skills card figma -->
                     <figure class="skills__container--card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="logo de figma"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma"/>
                         <figcaption class="upper">figma</figcaption>
                     </figure>
                 </article>
@@ -133,15 +133,15 @@
         </blockquote>
         <!-- MIS PROYECTOS -->
         <section id="projects">
-            <h2 class="fs__h2">Mis proyectos</h2>
-            <p class="h2--p">Algunos de mis trabajos realizados son:</p>
+            <h2 class="projects__h2">Mis proyectos</h2>
+            <p class="projects__p">Algunos de mis trabajos realizados son:</p>
             <!-- projects container -->
             <section class="projects__container">
                 <!-- project card - portafolio --> 
                     <article class="projects__container--card">
                         <a href="https://veronicadelmar.github.io/miportafolio/" target="_blank">
                             <figure>
-                                <img src="./img/portafolio.png" alt="imagen del proyecto">
+                                <img src="./img/portafolio.png" alt="imagen de mi portafolio">
                                 <figcaption>Portafolio</figcaption>
                             </figure>
                         </a>
@@ -150,7 +150,7 @@
                     <article class="projects__container--card">
                         <a href="https://veronicadelmar.github.io/mercado-liebre/" target="_blank">
                             <figure>
-                                <img src="./img/mercadoLiebre.png" alt="imagen del proyecto">
+                                <img src="./img/mercadoLiebre.png" alt="imagen del proyecto mercado liebre">
                                 <figcaption>Mercado liebre</figcaption>
                              </figure>
                         </a>
@@ -159,7 +159,7 @@
                      <article class="projects__container--card">
                           <a href="https://preview.webflow.com/preview/elliotsonstractors?utm_medium=preview_link&utm_source=dashboard&utm_content=elliotsonstractors&preview=b2552e7df1d2828b874fe17ef5b0908d&workflow=preview" target="_blank">
                             <figure>
-                                 <img src="./img/webflow@dingusandzazzy.com__cliente.png" alt="imagen del proyecto">
+                                 <img src="./img/webflow@dingusandzazzy.com__cliente.png" class="card__icon" alt="imagen del proyecto 'elliot tractores' para la reclutadora Justine Nadia Recruitment and HR manage">
                                  <figcaption>Prueba webflow</figcaption>
                             </figure>
                          </a>
@@ -263,7 +263,7 @@
                     <!-- escribeme BOX -->
                     <article class="contact__container--box">
                         <h3>Escríbeme</h3>
-                        <form action="./index.html" method="get">
+                        <form action="https://formsubmit.co/unachamaqueprograma@gmail.com" method="POST">
                             <fieldset>
                                 <section class="form__date">
                                     <article>
@@ -292,16 +292,24 @@
     <!-- FOOTER -->
     <footer>
         <!-- navFooter -->
-       <nav class="nav__footer">
-            <ul>
-                <li><a href="#about" class="upper white">hola</a></li>
-                <li><a href="#skills" class="upper white">conocimientos</a></li>
-                <li><a href="#projects" class="upper white">proyectos</a></li>
-                <li><a href="#contacts" class="upper white">contactos</a></li>
+       <nav class="navbar__footer">
+            <ul class="navbar__footer--ul">
+                <li class="navbar__footer--li">
+                    <a href="#about" class="upper white">hola</a>
+                </li>
+                <li class="navbar__footer--li">
+                    <a href="#skills" class="upper white">conocimientos</a>
+                </li>
+                <li class="navbar__footer--li">
+                    <a href="#projects" class="upper white">proyectos</a>
+                </li>
+                <li class="navbar__footer--li">
+                    <a href="#contacts" class="upper white">contactos</a>
+                </li>
             </ul>
         </nav>
         <!-- redes sociales -->
-        <section id="socialmedia__footer">
+        <section id="footer__socialmedia">
             <a href="https://github.com/veronicadelmar" target="_blank">
                 <figure>
                     <i class="fa-brands fa-github-alt circle"></i>
@@ -323,7 +331,7 @@
                 </figure>
             </a>
         </section>
-        <h6 class="white">Hecho con <i class="fa-solid fa-heart"></i> por Verolicious</h6>
+        <h4 class="white">Hecho con <i class="fa-solid fa-heart"></i> por Verolicious</h4>
     </footer>
 </body>
 </html>
