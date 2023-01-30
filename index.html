@@ -44,7 +44,7 @@
         </nav>
         <!-- icono de whatsapp-->
         <a href="https://api.whatsapp.com/send?phone=5491124002381" target="_blank" class="whatsapp">
-            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
         </a>
     </header>
     <!-- _________MAIN________ -->
@@ -57,7 +57,7 @@
                 <h1>Verónica Guiñan</h1>
                 <p id="about__quiensoy">Ingeniera, Desarrolladora Front End y fan de Harry Potter</p>
                 <!-- ABOUT MY boton para ir a la seccion proyectos -->
-                <a href="#projects" class="white upper about__btn btn__hover">lo que hago</a>
+                <a href="#projects" class="white upper about__btn btn__hover" aria-hidden="true">lo que hago</a>
             </article>
             <!-- BOX 2 | ABOUT MY -->
             <figure id="girl">
@@ -124,7 +124,7 @@
         </section>
         <!-- CITA DEL PRINCIPITO -->
         <blockquote cite="#" class="white">
-            <i class="fa-solid fa-quote-right"></i>
+            <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
             <p>Es una locura odiar a una rosa sólo porque te pinchó y es una locura renunciar a tus sueños porque uno no se cumplió.</p>
             <h3>El principito</h3>
             <figure>
@@ -232,13 +232,13 @@
                         <article class="contact__container--box--card">
                             <a href="https://github.com/veronicadelmar" target="_blank" rel="noopener noreferrer">
                                 <figure>
-                                    <i class="fa-brands fa-github-alt"></i>
+                                    <i class="fa-brands fa-github-alt" aria-hidden="true"></i>
                                     <figcaption>Veronicadelmar</figcaption>
                                 </figure>
                             </a>
                             <a href="https://www.linkedin.com/in/veronicagui%C3%B1an/" target="_blank" rel="noopener noreferrer">
                                 <figure>
-                                    <i class="fa-brands fa-linkedin-in"></i>
+                                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                                     <figcaption>Verónica Guiñan</figcaption>
                                 </figure>
                             </a>
@@ -247,13 +247,13 @@
                         <article class="contact__container--box--card">
                             <a href="mailto:unachamaqueprograma@gmail.com" target="_blank">
                                 <figure>
-                                    <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                     <figcaption>unachamaqueprograma@gmail.com</figcaption>
                                 </figure>
                             </a>
                             <a href="https://www.instagram.com/unachamaqueprograma/" target="_blank" rel="noopener noreferrer">
                                 <figure>
-                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                     <figcaption>@unachamaqueprograma</figcaption>
                                 </figure>
                             </a>
@@ -264,8 +264,8 @@
                     <article class="contact__container--box">
                         <h3>Escríbeme</h3>
                         <form action="https://formsubmit.co/unachamaqueprograma@gmail.com" method="POST">
-                            <fieldset>
-                                <section class="form__date">
+                                <fieldset class="form__date">
+                                    <!-- use la etiqueta article como cajas para cada label and input de nombre y apellido para luego en la caja padre form__date poder poner cada article uno al lado del otro -->
                                     <article>
                                         <label for="text">Nombre *</label>
                                         <input type="text" name="name" id="name" class="name" placeholder="Ada" required>
@@ -274,16 +274,17 @@
                                         <label for="text">Apellido *</label>
                                         <input type="text" name="surname" id="surname" placeholder="Lovelace" required>
                                     </article>
-                                </section>
-                                <section>
+                                </fieldset>
+                                <fieldset>
                                     <label for="text">Email *</label>
                                     <input type="email" name="email" id="email" placeholder="ada.lovelace@gmail.com" required>
                                     <label for="text">Mensaje *</label>
                                     <textarea name="mensaje" id="mensaje" placeholder="Escriba un mensaje aquí" cols="25" rows="6" required></textarea>
+                                    <!-- boton enviar -->
                                     <a href="./index.html">
                                          <button type="submit" class="white btn__hover ">Enviar</button>
                                     </a>
-                                </section>
+                                </fieldset>
                             </fieldset>
                         </form>
                     </article>
@@ -312,26 +313,26 @@
         <section id="footer__socialmedia">
             <a href="https://github.com/veronicadelmar" target="_blank">
                 <figure>
-                    <i class="fa-brands fa-github-alt circle"></i>
+                    <i class="fa-brands fa-github-alt circle" aria-hidden="true"></i>
                 </figure>
             </a>
             <a href="https://www.linkedin.com/in/veronicagui%C3%B1an/" target="_blank">
                 <figure>
-                    <i class="fa-brands fa-linkedin-in circle"></i>
+                    <i class="fa-brands fa-linkedin-in circle" aria-hidden="true"></i>
                 </figure>
             </a>
             <a href="mailto:unachamaqueprograma@gmail.com" target="_blank">
                 <figure>
-                    <i class="fa-solid fa-envelope circle"></i>
+                    <i class="fa-solid fa-envelope circle" aria-hidden="true"></i>
                 </figure>
             </a>
             <a  href="https://www.instagram.com/unachamaqueprograma/" target="_blank">
                 <figure>
-                    <i class="fa-brands fa-instagram circle"></i>
+                    <i class="fa-brands fa-instagram circle" aria-hidden="true"></i>
                 </figure>
             </a>
         </section>
-        <h4 class="white">Hecho con <i class="fa-solid fa-heart"></i> por Verolicious</h4>
+        <h4 class="white">Hecho con <i class="fa-solid fa-heart" aria-hidden="true"></i> por Verolicious</h4>
     </footer>
 </body>
 </html>

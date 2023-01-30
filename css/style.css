@@ -205,10 +205,13 @@ fieldset input, fieldset textarea{
     border: 2px var(--pink) solid;
     outline: transparent;
 }
+textarea{
+    resize: none;
+}
 #email, #mensaje, .form__date input{
     width: 100%;
 }
-/*boton de enviar*/
+/*boton enviar*/
 fieldset button{
     background-color: var(--pink);
     padding: 15px 30px;
@@ -333,7 +336,7 @@ h4 i{
      .contact__container--box{
         padding-bottom: 40px;
     }
-    /* contactame BOX */ /**/
+    /* contactame BOX */
     .contact__container--box--card{
         display: flex;
         justify-content: flex-start;
@@ -454,6 +457,7 @@ h4 i{
         margin-top: 20px;
         font-size: 1.2rem;
     }
+    /* ABOUT MY boton para ir a la seccion proyectos */
     .about__btn{
         margin-top: 30px;
         -webkit-animation: tracking-in-expand-fwd-top 0.8s ease-out both;
@@ -623,7 +627,7 @@ h4 i{
     #footer__socialmedia{
         padding: 0 560px;
     }
-      #footer__socialmedia a:hover i{
+    #footer__socialmedia a:hover i{
         border: 1px #ffffff solid;
         background-color: var(--pink);
         color: var(--color__white);
