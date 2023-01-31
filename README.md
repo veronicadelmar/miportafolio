@@ -5,22 +5,22 @@
 
    Tengo experiencia en Coder House como Coordinadora y Tutora en los cursos de:
 
-      **- Desarrollo web**
+      - Desarrollo web
 
-      **- JavaScript**
+      - JavaScript
 
-    **NOTA IMPORTANTE: BUSCO EMPLEO COMO DESARROLLADORA FRONT END** 😁
+**NOTA IMPORTANTE: BUSCO EMPLEO COMO DESARROLLADORA FRONT END** 😁
 ***
-## Este es mi proyecto del Módulo 1 en ADA ITW ~ Curso Front end
-   *<>*En mi portafolio encontraras una pequeña reseña de lo que estudie, a que me dedico y a lo que son fan.
+## Mi Proyecto del Módulo 1 en ADA ITW ~ Curso Front end
+   *<>* En mi portafolio encontraras una pequeña reseña de lo que estudie, a que me dedico y a lo que son fan.
 
-   *<>*Conoceras todas las habilidades que he obtenido a lo largo de estos 4 años, como por ejemplo, html 5, css 3, javascript, reactjs, git, webflow, figma, canva, mysql. Y quiero seguir sumando conocimientos a la lista. 
+   *<>* Conoceras todas las habilidades que he obtenido a lo largo de estos 4 años, como por ejemplo: Html 5, Css 3, JavaScript, ReactJs, Git, Webflow, Figma, Canva, Mysql y quiero seguir sumando conocimientos a la lista. 
 
-   *<>*Encontraras mi cita preferida del libro "El Principito". 
+   *<>* Encontraras mi cita preferida del libro "El Principito". 
 
-   *<>*Tendrás acceso a proyectos que he realizado y algunos todavia estan en proceso, debido al transcurso del curso Front end que realizo en ADA ITW. 
+   *<>* Tendrás acceso a proyectos que he realizado y algunos todavia estan en proceso, debido al transcurso del curso Front end que realizo en ADA ITW. 
 
-   *<>*Visualizaras mis redes sociales y podrás contactarme por varios medios como lo son: whatsapp, linkedin, email o también puedes rellenar el formulario y me llegara al email toda la información que completes, *espero que sea gestionar una entrevista*.
+   *<>* Visualizaras mis redes sociales y podrás contactarme por varios medios como lo son: whatsapp, linkedin, email o también puedes rellenar el formulario y me llegara al email toda la información que completes, *espero que sea gestionar una entrevista*.
 ***
 ![imagen](.img/@unachamaqueprograma.png)
 
