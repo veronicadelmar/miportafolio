@@ -31,6 +31,10 @@
     color: var(--color__text);
     padding: 50px 0;
 }
+/*estilos solo para el MAIN del html : pagess__in__contruction */
+.main__container{
+    height: 30vw;
+}
 /* _________HEADER_________ */
 header{
     z-index: 1;
