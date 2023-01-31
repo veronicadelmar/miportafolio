@@ -1,2 +1,3 @@
-# portafolio
-Portafolio de Verónica Guiñan donde recopilo todos mis proyectos propios y en los que he colaborado. 
+# Portafolio de Verónica Guiñan
+## Ingeniera y Desarrolladora Front end
+
