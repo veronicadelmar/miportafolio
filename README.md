@@ -1,13 +1,13 @@
 # 💼 Portafolio ~ Verolicious ~ Front end Developer 💻
  Hola me llamo **Verónica del Mar Guiñan López**, soy **Ingeniera Mecatrónica 👩‍🎓 "UNEXPO" 2018.**
 
-   Mi perfil profesional esta orientado al Desarrollo Front end. 👩‍💻
+   Mi perfil profesional esta orientado al **Desarrollo Front end.** 👩‍💻
 
    Tengo experiencia en Coder House como Coordinadora y Tutora en los cursos de:
 
-      - Desarrollo web
+      **- Desarrollo web**
 
-      - JavaScript
+      **- JavaScript**
 
     **NOTA IMPORTANTE: BUSCO EMPLEO COMO DESARROLLADORA FRONT END** 😁
 ***
