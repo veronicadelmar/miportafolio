@@ -35,6 +35,9 @@
 .main__container{
     height: 30vw;
 }
+.main__container a:hover{
+    color: #e8fc03;
+}
 /* _________HEADER_________ */
 header{
     z-index: 1;
@@ -262,16 +265,6 @@ h4 i{
 /* media queries 760px para tablet */
 @media (min-width: 768px){
     /* _________HEADER_________ */
-     /* whatsapp */
-     .whatsapp{
-        display: initial;
-        font-size: 3rem;
-        top: 30px;
-        color: rgb(103,193,94);
-        position:fixed;
-        right: 8px;
-        z-index: 0;
-        }
     /* hover para todos los botones */ /* los coloque a partir de este break point para que en mobile no se vean transiciones bruscas, soloamente a partir de tablet :)! */
     .btn__hover:hover{
     transition-property: all;
@@ -279,6 +272,19 @@ h4 i{
     transition-duration: 1s;
     }
     /* _________MAIN_________ */
+    /* whatsapp */
+    .whatsapp{
+        background-color: var(--color__white);
+        padding: 0 10px;
+        border-radius: 100%;
+        display: initial;
+        font-size: 3rem;
+        bottom: 0;
+        color: rgb(103,193,94);
+        position:fixed;
+        right: 8px;
+        z-index: 0;
+        }
     /* BOX 1 | ABOUT MY */
     #about__hello{
         font-weight: 900;
@@ -430,13 +436,12 @@ h4 i{
         border-radius: 30px;
         margin-right: 120px;
         }
-    /* whatsapp */
-    .whatsapp{
-        font-size: 4rem;
-        top: 120px;
-        right: 22px;
-     }
     /*_________MAIN________*/
+     /* whatsapp */
+     .whatsapp{
+        font-size: 4rem;
+        right: 20px;
+     }
     /* ABOUT MY */
     #about{
         display: flex;
