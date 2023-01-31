@@ -1,5 +1,5 @@
 # 💼 Portafolio ~ Verolicious ~ Front end Developer 💻
- Hola me llamo *Verónica del Mar Guiñan López*, soy ***Ingeniera Mecatrónica 👩‍🎓 "UNEXPO" 2018.**
+ Hola me llamo **Verónica del Mar Guiñan López**, soy **Ingeniera Mecatrónica 👩‍🎓 "UNEXPO" 2018.**
 
    Mi perfil profesional esta orientado al Desarrollo Front end. 👩‍💻
 
