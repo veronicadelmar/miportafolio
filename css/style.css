@@ -274,17 +274,17 @@ h4 i{
     /* _________MAIN_________ */
     /* whatsapp */
     .whatsapp{
-        background-color: var(--color__white);
+        background-color: rgb(103,193,94);
         padding: 0 10px;
         border-radius: 100%;
         display: initial;
-        font-size: 3rem;
-        bottom: 0;
-        color: rgb(103,193,94);
+        font-size: 2.5rem;
+        bottom: 30px;
+        color: var(--color__white);
         position:fixed;
-        right: 8px;
+        right: 12px;
         z-index: 0;
-        }
+     }
     /* BOX 1 | ABOUT MY */
     #about__hello{
         font-weight: 900;
@@ -315,7 +315,7 @@ h4 i{
     }
     /* MIS PROYECTOS */
     .projects__container--card{
-        width: 45%;
+        width: 40%;
         box-shadow: -3px -2px 8px -3px var(--color__dark)
     }
     .card__icon{
@@ -368,7 +368,7 @@ h4 i{
         border-radius: 100%;
         color: var(--color__white);
         transition-property: all;
-        transition-duration: 0.5s;
+        transition-duration: 1s;
     }
     /* escribeme BOX */
     .form__date{
@@ -437,11 +437,11 @@ h4 i{
         margin-right: 120px;
         }
     /*_________MAIN________*/
-     /* whatsapp */
-     .whatsapp{
-        font-size: 4rem;
-        right: 20px;
-     }
+        /* whatsapp */
+    .whatsapp{
+        font-size: 3rem;
+        right: 30px;
+        }
     /* ABOUT MY */
     #about{
         display: flex;
