@@ -431,6 +431,7 @@ h4 i{
     #footer__socialmedia{
       padding: 0 220px;
     }
+}
 /* media queries 1200px para desktop */
 @media (min-width: 1200px){
     body{
@@ -593,11 +594,11 @@ h4 i{
         box-shadow: -5px 3px 5px -4px rgba(255,91,157,1);
         border-color: var(--pink);
     }
-    .projects__container .projects__container--card:nth-child(2):hover{
+    .projects__container .projects__container--card:nth-child(3):hover{
         box-shadow: -5px 3px 5px -4px rgb(234,200,40);
         border-color: rgb(234,200,40);
     }
-    .projects__container .projects__container--card:nth-child(3):hover{
+    .projects__container .projects__container--card:nth-child(5):hover{
         box-shadow: -5px 3px 5px -4px rgb(241,108,3);
         border-color: rgb(241,108,3);
     }
