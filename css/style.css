@@ -594,11 +594,23 @@ h4 i{
         box-shadow: -5px 3px 5px -4px rgba(255,91,157,1);
         border-color: var(--pink);
     }
-    .projects__container .projects__container--card:nth-child(3):hover{
+    .projects__container .projects__container--card:first-child:hover{
+        box-shadow: -5px 3px 5px -4px rgb(3, 3, 23);
+        border-color: rgb(3, 3, 23);
+    }
+    .projects__container .projects__container--card:nth-child(2):hover{
+        box-shadow: -5px 3px 5px -4px rgb(70, 30, 91);
+        border-color: rgb(70, 30, 91);
+    }
+    .projects__container .projects__container--card:nth-child(4):hover{
+        box-shadow: -5px 3px 5px -4px rgb(74, 43, 16);
+        border-color: rgb(74, 43, 16);
+    }
+    .projects__container .projects__container--card:nth-child(7):hover{
         box-shadow: -5px 3px 5px -4px rgb(234,200,40);
         border-color: rgb(234,200,40);
     }
-    .projects__container .projects__container--card:nth-child(5):hover{
+    .projects__container .projects__container--card:nth-child(8):hover{
         box-shadow: -5px 3px 5px -4px rgb(241,108,3);
         border-color: rgb(241,108,3);
     }
